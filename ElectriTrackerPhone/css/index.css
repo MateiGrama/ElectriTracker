@@ -1,0 +1,107 @@
+﻿body {
+    
+}
+#header {
+    background-color: rgb(34, 139, 101);
+    color: rgb(238, 245, 242);
+    font-size:30px;
+    padding:5px 0px 5px 3px;
+
+}
+#numeElectrician{
+    padding-left:15px;
+}
+#header input[type="text"] {
+     font-size:20px;
+     width: 200px;   
+    }
+
+
+#header input[type="submit"]{
+    background-color: rgb(192, 230, 217);
+    color:rgb(8, 74, 50);
+    font-size: 22px;
+    font-family:'Times New Roman', Times, serif;
+    border-radius: 4px;
+    padding: 3px;
+    margin-top: 5px;
+  }
+
+
+html, body{
+    background-image: url('../images/verde.jpg');
+    padding: 0px;
+    margin: 0px;
+}
+div button{
+  border-radius: 5px;
+  border:solid 1px #333;
+  border-color: black;
+  padding: 3px;
+  margin-top: 5px;
+  margin-left: 16px;
+  font-size:40px;
+  font-family: Engravers MT, Ebrima;
+}
+
+#ocupat{
+    width:288px;
+    height:85px;
+    margin-top: 60px;
+    background-color:rgb(84, 84, 84);
+    color:black;
+}
+#liber{
+    margin-top: 20px;
+    width:288px;
+    height:85px;
+    background-color:rgb(5, 114, 4);
+    color:black;
+}
+#urgenta{
+    margin-top: 35px;
+    width:288px;
+    height:85px;
+    font-size:26px;
+    border-radius: 40px;
+    background-color:rgb(236, 236, 86);
+}
+
+
+//320x533
+#container {
+    width: 320px;
+    margin: 0px auto;
+    background-color:white;
+    padding: 5px;
+}
+#footer{
+    position:absolute;
+    bottom:0px;
+    right:0px;
+    left:0px;
+    padding: 0px;
+    margin: 0px;
+    background-color:rgb(34, 139, 101);
+
+}
+#eroare{
+    background-color:rgb(226, 0, 0);
+    width:auto;
+    text-align: center;
+    font-size: 25px;
+    padding: 0px 0px 0px 3px;
+    margin:0px;
+
+}
+.warning{
+    font-size: 28px;
+}
+
+#semn1 {
+    float: right;
+}
+
+#2 {
+    text-align: left;
+}

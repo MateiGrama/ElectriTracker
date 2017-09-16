@@ -1,0 +1,49 @@
+﻿<Window x:Class="ElectriTrackerCenter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+        xmlns:m="clr-namespace:Microsoft.Maps.MapControl.WPF;assembly=Microsoft.Maps.MapControl.WPF" 
+        Title="ElectriTrackerCenter" Height="620.5" Width="958.5" WindowState="Maximized">
+    <Grid x:Name="grid" Margin="0,0,0,-3" RenderTransformOrigin="0.493,0.587">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <ListView Margin="10,10,0,10" Name="lvDataBinding" HorizontalAlignment="Left" Width="345">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Canvas x:Name="canvas1" Height="{Binding Marime}" Width="318" MouseLeftButtonDown="Canvas1_MouseLeftButtonDown" Background="Red" OpacityMask="Red">
+                        <Rectangle  Fill="#FFF4F4F5" HorizontalAlignment="Left" Stroke="Black" Width="317.75" UseLayoutRounding="False" Height="160" RenderTransformOrigin="-0.107,0.488"/>
+                        <Label Content="{Binding Name}" VerticalAlignment="Top" RenderTransformOrigin="0.474,0.077" Height="28" FontSize="24" IsEnabled="False" VerticalContentAlignment="Center" FontWeight="Bold" Padding="0" Canvas.Left="10" Canvas.Top="40" Width="192"/>
+                        <Image Source="{Binding Status}" Stretch="Fill" Width="45" Height="45" Canvas.Left="207" Canvas.Top="30"/>
+                        <Image Source="phone-call-icon-h_icon_phone_b-1024x1024.png" Stretch="Fill" Width="45" Height="45" RenderTransformOrigin="0.385,-0.135" Canvas.Left="264" Canvas.Top="30" MouseLeftButtonDown="Image_MouseLeftButtonDown"/>
+                        <Image Height="45" Canvas.Left="145" Source="warning-icon.png" Stretch="Fill" Width="45" Visibility="{Binding Urgenta}"/>
+                        <Image Source="battery-polarity-icon.png" Stretch="Fill" Width="45" Height="45" Canvas.Left="9" Canvas.Top="107"/>
+                        <Label Content="{Binding Battery}" VerticalAlignment="Top" RenderTransformOrigin="0.517,0.507" Height="18" IsEnabled="False" FontWeight="Bold" VerticalContentAlignment="Center" Padding="0" Grid.IsSharedSizeScope="True" HorizontalAlignment="Left" Width="32" FontSize="16" Canvas.Left="58" Canvas.Top="122"/>
+                        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="1" VerticalAlignment="Top" Width="300" RenderTransformOrigin="0.5,0.5" Canvas.Left="8" Canvas.Top="98" IsEnabled="False">
+                            <Border.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform ScaleY="-1"/>
+                                    <SkewTransform/>
+                                    <RotateTransform/>
+                                    <TranslateTransform/>
+                                </TransformGroup>
+                            </Border.RenderTransform>
+                        </Border>
+                        <Image Source="location-512.png" Stretch="Fill" Width="45" Height="45" Canvas.Left="95" Canvas.Top="107"/>
+                        <Label Content="{Binding Location}" VerticalAlignment="Top" RenderTransformOrigin="0.517,0.507" Height="18" IsEnabled="False" FontWeight="Bold" VerticalContentAlignment="Center" Padding="0" Grid.IsSharedSizeScope="True" HorizontalAlignment="Left" Width="164" FontSize="16" Canvas.Left="145" Canvas.Top="122"/>
+                    </Canvas>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <m:Map x:Name="myMap" CredentialsProvider=" Ap4gVvrRQUa2zhIaUPIGT_bNicO8__xhWszmhYBd4VpdGn-t97y858nop95ZzSUp" Margin="360,10,10,10" Center="44.42677,26.10254" ZoomLevel="11">
+
+        </m:Map>
+        <Label x:Name="eroare2" Content="LOADING..." HorizontalAlignment="Center" VerticalAlignment="Center" Height="206" Width="950" FontSize="36" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" FontFamily="Gill Sans MT" Margin="0,174,0,213" Foreground="Black" Background="#00000000"/>
+        <Label x:Name="eroare" Content="" FontSize="36"  FontFamily="Gill Sans MT" Margin="10,402,-80,83" Foreground="#FF170404" FontStyle="Italic" Height="108" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Visibility="Hidden" />
+        <Image x:Name="eroare2xbutton" Margin="10,10,0,0" Source="close-icon.png" Stretch="Fill" RenderTransformOrigin="0.512,1.391" Height="75" VerticalAlignment="Top" HorizontalAlignment="Left" Width="81" MouseLeftButtonDown="Image_MouseLeftButtonDown_1" Visibility="Hidden"/>
+        <Label x:Name="eroare2_Copy" Content="© 2015 BASARAB,VIANU,LOVINESCU" HorizontalAlignment="Right" VerticalAlignment="Top" Height="32" Width="309" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold" FontFamily="Gill Sans MT" Margin="0,4,10,0" Foreground="Black" Background="#00000000"/>
+        <Label x:Name="eroare2_Copy1" Content="Ignorati" HorizontalAlignment="Left" VerticalAlignment="Top" Height="64" Width="146" FontSize="36" VerticalContentAlignment="Center" FontWeight="Bold" FontFamily="Gill Sans MT" Margin="91,21,0,0" Foreground="Black" Background="#00000000" MouseLeftButtonDown="Image_MouseLeftButtonDown_1" Visibility="Hidden"/>
+
+        <CheckBox x:Name="checkbox2" Content="Afisati toti electricieni" HorizontalAlignment="Left" Width="339" Margin="383,23,0,0" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" FontFamily="Gill Sans MT" FontSize="36" Height="62" VerticalAlignment="Top" Visibility="Hidden"/>
+        <CheckBox x:Name="checkbox1" Content="Nu ma mai intreba" HorizontalAlignment="Left" Margin="23,90,0,0" VerticalAlignment="Top" Width="214" FontFamily="Gill Sans MT" FontSize="20" FontStyle="Italic" Visibility="Hidden"/>
+    </Grid>
+</Window>

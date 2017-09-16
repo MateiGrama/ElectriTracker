@@ -1,0 +1,12 @@
+C:\Users\Grama Matei\Desktop\ELECTRITRACKER\ElectriTracker\ElectriTrackerCenter\bin\Debug\ElectriTrackerCenter.exe.config
+C:\Users\Grama Matei\Desktop\ELECTRITRACKER\ElectriTracker\ElectriTrackerCenter\obj\Debug\ElectriTrackerCenter.csproj.App.config
+C:\Users\Grama Matei\Desktop\ELECTRITRACKER\ElectriTracker\ElectriTrackerCenter\obj\Debug\Interop.SKYPE4COMLib.dll
+C:\Users\Grama Matei\Desktop\ELECTRITRACKER\ElectriTracker\ElectriTrackerCenter\obj\Debug\ElectriTrackerCenter.csproj.ResolveComReference.cache
+E:\Proiecte\ELECTRITRACKER\ElectriTracker\ElectriTrackerCenter\bin\Debug\ElectriTrackerCenter.exe.config
+E:\Proiecte\ELECTRITRACKER\ElectriTracker\ElectriTrackerCenter\obj\Debug\ElectriTrackerCenter.csproj.App.config
+E:\Proiecte\ELECTRITRACKER\ElectriTracker\ElectriTrackerCenter\obj\Debug\Interop.SKYPE4COMLib.dll
+E:\Proiecte\ELECTRITRACKER\ElectriTracker\ElectriTrackerCenter\obj\Debug\ElectriTrackerCenter.csproj.ResolveComReference.cache
+E:\Proiecte\ELECTRITRACKER\ElectriTracker\ElectriTrackerCenter\obj\Debug\ElectriTrackerCenter.csprojResolveAssemblyReference.cache
+E:\Proiecte\ELECTRITRACKER\ElectriTracker\ElectriTrackerCenter\obj\Debug\App.g.cs
+E:\Proiecte\ELECTRITRACKER\ElectriTracker\ElectriTrackerCenter\obj\Debug\ElectriTrackerCenter_Content.g.cs
+E:\Proiecte\ELECTRITRACKER\ElectriTracker\ElectriTrackerCenter\obj\Debug\ElectriTrackerCenter_MarkupCompile.cache
